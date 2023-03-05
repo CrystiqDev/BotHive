@@ -2,15 +2,16 @@
 <html>
 
 <head>
-    <link rel="shortcut icon" type="image/x-icon"
-        href="../favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
     <title>Bothive</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         body {
             background: #e87121;
             font-family: Arial, sans-serif;
             position: relative;
             height: 100%;
+            margin: 0;
         }
 
         /* Style the top bar */
@@ -38,26 +39,23 @@
             font-size: 24px;
             font-weight: bold;
             text-decoration: none;
-            margin-right: 1050px;
+            margin-right: 20px;
         }
 
         .botname {
             color: #fff;
-            font-size: 40px;
+            font-size: 30px;
             font-weight: bold;
             text-align: center;
-            flex: 1;
-            margin-top: -30px;
+            margin-top: 30px;
         }
 
         .botdescription {
             color: #fff;
-            font-size: 25px;
+            font-size: 20px;
             text-align: center;
-            flex: 1;
             margin-top: 10px;
         }
-
 
         /* Style the support server button */
         .support-btn {
@@ -67,12 +65,11 @@
             padding: 10px 20px;
             text-align: center;
             text-decoration: none;
-            display: inline-block;
             font-size: 16px;
-            margin: 7px 40px;
+            margin: 7px 20px;
             cursor: pointer;
-            float: right;
             border-radius: 25px;
+            flex-shrink: 0;
         }
 
         .support-btn:hover {
@@ -175,6 +172,73 @@
             font-weight: bold;
         }
 
+        @media (max-width: 600px) {
+            .container {
+                margin-top: 120px;
+            }
+
+            .icon img {
+                height: 120px;
+                width: 120px;
+                margin: 0 auto;
+                display: block;
+            }
+
+            .title {
+                margin: 20px auto;
+                font-size: 20px;
+                text-align: center;
+                margin-top: 30px;
+            }
+
+            .description {
+                margin: 10px auto;
+                font-size: 14px;
+                text-align: center;
+                margin-top: 10px;
+            }
+
+            #title {
+                font-size: 18px;
+            }
+
+            #subtitle {
+                font-size: 16px;
+            }
+
+            .botname {
+                font-size: 25px;
+                margin-top: 10px;
+                text-align: center;
+            }
+
+            .botdescription {
+                font-size: 14px;
+                margin-top: 10px;
+                text-align: center;
+            }
+
+            .buttons-container {
+                display: flex;
+                flex-direction: column;
+                margin: 0 auto;
+                margin-top: 30px;
+            }
+
+            .bottom-btn {
+                display: block;
+                margin: 5px auto;
+                font-size: 14px;
+                padding: 10px 20px;
+            }
+
+            .support-btn {
+                display: block;
+                margin: 5px auto;
+                font-size: 14px;
+                padding: 10px 20px;
+            }
+        }
 
         /* Style the name on hover */
     </style>
