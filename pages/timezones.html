@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="shortcut icon" type="image/x-icon"
+        href="C:\Users\Crystiq.LAPTOP-KLD2CS4R\Desktop\bothive_website\favicon.ico">
+    <title>Bothive</title>
+    <style>
+        body {
+            background: #e87121;
+            font-family: Arial, sans-serif;
+            position: relative;
+            height: 100%;
+        }
+
+        /* Style the top bar */
+        .topbar {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 999;
+        }
+
+        #logo {
+            height: 75px;
+        }
+
+        /* Style the Bothive logo */
+        .branding {
+            color: #e87121;
+            font-size: 24px;
+            font-weight: bold;
+            text-decoration: none;
+            margin-right: 1050px;
+        }
+
+        .botname {
+            color: #fff;
+            font-size: 40px;
+            font-weight: bold;
+            text-align: center;
+            flex: 1;
+            margin-top: -30px;
+        }
+
+        .botdescription {
+            color: #fff;
+            font-size: 25px;
+            text-align: center;
+            flex: 1;
+            margin-top: 10px;
+        }
+
+
+        /* Style the support server button */
+        .support-btn {
+            background-color: #e87121;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 7px 40px;
+            cursor: pointer;
+            float: right;
+            border-radius: 25px;
+        }
+
+        .support-btn:hover {
+            background-color: #d7611f;
+            transform: scale(1.1);
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+            /* add shadow on hover */
+        }
+
+        .buttons-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 25px;
+            margin-bottom: 50px;
+        }
+
+        .bottom-btn {
+            background-color: #6b2b00;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 25px;
+            margin-right: 20px;
+        }
+
+        .bottom-btn:hover {
+            background-color: #d7611f;
+            transform: scale(1.1);
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+        }
+
+        /* Style the icon container */
+        .icon-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 80px;
+        }
+
+        .icon {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 50px;
+            position: relative;
+        }
+
+        .icon img {
+            height: 150px;
+            width: 150px;
+            background: #fff;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        .title {
+            color: #fff;
+            margin-left: 150px;
+            text-align: left;
+            margin-top: 50px;
+            font-size: 15px;
+            text-decoration: none;
+        }
+
+        .description {
+            color: #fff;
+            margin-left: 150px;
+            text-align: left;
+            font-size: 15px;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+
+        .description a {
+            color: #fff;
+        }
+
+        .bottom {
+            color: #fff;
+            margin-left: 150px;
+            text-align: left;
+            font-size: 15px;
+            margin-top: 10px;
+            text-decoration: none;
+            margin-bottom: 100px;
+        }
+
+        #title {
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+
+        /* Style the name on hover */
+    </style>
+</head>
+
+<body>
+
+    <body>
+        <div class="topbar">
+            <img src="C:\Users\Crystiq.LAPTOP-KLD2CS4R\Desktop\bothive_website\brand.png" alt="Logo" id="logo">
+            <a class='branding'
+                href="C:\Users\Crystiq.LAPTOP-KLD2CS4R\Desktop\bothive_website\index.html">BotHive.dev</a>
+            <a href="https://discord.gg/w2UgvznEzP" target="_blank" class="support-btn">Support Server</a>
+        </div>
+        <div class="icon-container">
+            <div class="icon">
+                <img src="C:\Users\Crystiq.LAPTOP-KLD2CS4R\Desktop\bothive_website\timezones.png">
+            </div>
+        </div>
+        <div class="botname">Timezones</div>
+        <div class="botdescription">Timezones bot helps schedule meetings with ease!
+        </div>
+        <div class="title" id="title">Timezones is a Discord bot that helps users coordinate with each other by
+            displaying
+            the current time for specific members.</div>
+        <div class="description">Simply use the command '/time [user]' and Timezones will show the current time for the
+            mentioned user,
+            taking into account their time zone!</div>
+        <div class="description">This will only happen if you or the other has connected 1 of 500 possible places that
+            can be selected!</div>
+        <div class="description" id="title">Features</div>
+        <div class="description">· To add a timezone yourself use "/add [place]"</div>
+        <div class="description">· To view another users time use "/time [user]"</div>
+        <div class="description">· To change your timezone use "/change [place]"</div>
+        <div class="description">· To remove your timezone use "/remove"</div>
+        <div class="description" id="title">Privacy</div>
+        <div class="description">For safety and privacy only users who have entered their own timezone can view the time
+            of other people.</div>
+        <div class="description">Adding a timezone will be done privatly so other users cannot see your connected
+            timezone, only your connected
+            time</div>
+        <div class="description" id="title">Contact</div>
+        <div class="description">Discord: Crystiq#6897</div>
+        <div class="description">Email: timezonesbot.help@gmail.com</div>
+        <div class="buttons-container">
+            <a href="https://discord.com/oauth2/authorize?client_id=1023653781398884431&permissions=74816&scope=bot%20applications.commands"
+                target="_blank" class="bottom-btn">Invite me!</a>
+            <a href="https://top.gg/bot/1023653781398884431" target="_blank" class="bottom-btn">View on top.gg</a>
+        </div>
+    </body>
+
+</html>

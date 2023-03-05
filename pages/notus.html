@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="shortcut icon" type="image/x-icon"
+        href="C:\Users\Crystiq.LAPTOP-KLD2CS4R\Desktop\bothive_website\favicon.ico">
+    <title>Bothive</title>
+    <style>
+        body {
+            background: #e87121;
+            font-family: Arial, sans-serif;
+            position: relative;
+            height: 100%;
+        }
+
+        /* Style the top bar */
+        .topbar {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 999;
+        }
+
+        #logo {
+            height: 75px;
+        }
+
+        /* Style the Bothive logo */
+        .branding {
+            color: #e87121;
+            font-size: 24px;
+            font-weight: bold;
+            text-decoration: none;
+            margin-right: 1050px;
+        }
+
+        .botname {
+            color: #fff;
+            font-size: 40px;
+            font-weight: bold;
+            text-align: center;
+            flex: 1;
+            margin-top: -30px;
+        }
+
+        .botdescription {
+            color: #fff;
+            font-size: 25px;
+            text-align: center;
+            flex: 1;
+            margin-top: 10px;
+        }
+
+
+        /* Style the support server button */
+        .support-btn {
+            background-color: #e87121;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 7px 40px;
+            cursor: pointer;
+            float: right;
+            border-radius: 25px;
+        }
+
+        .support-btn:hover {
+            background-color: #d7611f;
+            transform: scale(1.1);
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+            /* add shadow on hover */
+        }
+
+        .buttons-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 25px;
+            margin-bottom: 50px;
+        }
+
+        .bottom-btn {
+            background-color: #6b2b00;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 25px;
+            margin-right: 20px;
+        }
+
+        .bottom-btn:hover {
+            background-color: #d7611f;
+            transform: scale(1.1);
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+        }
+
+        /* Style the icon container */
+        .icon-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 80px;
+        }
+
+        .icon {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 50px;
+            position: relative;
+        }
+
+        .icon img {
+            height: 150px;
+            width: 150px;
+            background: #fff;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        .title {
+            color: #fff;
+            margin-left: 250px;
+            text-align: left;
+            margin-top: 50px;
+            font-size: 15px;
+            text-decoration: none;
+        }
+
+        .description {
+            color: #fff;
+            margin-left: 250px;
+            text-align: left;
+            font-size: 15px;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+
+        .description a {
+            color: #fff;
+        }
+
+        .bottom {
+            color: #fff;
+            margin-left: 250px;
+            text-align: left;
+            font-size: 15px;
+            margin-top: 10px;
+            text-decoration: none;
+            margin-bottom: 100px;
+        }
+
+        #title {
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        #subtitle {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+
+        /* Style the name on hover */
+    </style>
+</head>
+
+<body>
+
+    <body>
+        <div class="topbar">
+            <img src="C:\Users\Crystiq.LAPTOP-KLD2CS4R\Desktop\bothive_website\brand.png" alt="Logo" id="logo">
+            <a class='branding'
+                href="C:\Users\Crystiq.LAPTOP-KLD2CS4R\Desktop\bothive_website\index.html">BotHive.dev</a>
+            <a href="https://discord.gg/w2UgvznEzP" target="_blank" class="support-btn">Support Server</a>
+        </div>
+        <div class="icon-container">
+            <div class="icon">
+                <img src="C:\Users\Crystiq.LAPTOP-KLD2CS4R\Desktop\bothive_website\notus.png">
+            </div>
+        </div>
+        <div class="botname">Notus</div>
+        <div class="botdescription">Make your community more active!</div>
+        <div class="title" id="title">Notus allows you to host events like Guess the Number in a matter of seconds.
+            Notus comes with..</div>
+        <div class="description">· a beautiful & simple UI (User Interface)</div>
+        <div class="description">· community events</div>
+        <div class="description">· message statistics</div>
+        <div class="description">· weekly updates</div>
+        <div class="description" id="title">Featured Commands:</div>
+        <div class="description" id="subtitle">Guess the Number</div>
+        <div class="description">- /gtn start (channel) | Start a guess the number competition.</div>
+        <div class="description">- /gtn stop | End a guess the number competition.</div>
+        <div class="description">- /gtn hint (hint) | Send a hint if people are struggling</div>
+        <div class="description" id="subtitle">Link card's</div>
+        <div class="description">- /links view (user) | View a users links.</div>
+        <div class="description">- /links add (title) (description) (url) | Add a link to your links.</div>
+        <div class="description">- /links remove (title) | Remove a link from your links.</div>
+        <div class="description" id="subtitle">Portfolio's</div>
+        <div class="description">- /portfolio (view)
+            (user) | View a users portfolio.</div>
+        <div class="description">- /portfolio setup | Setup your portfolio.</div>
+        <div class="description">- /portfolio delete | Delete your portfolio.</div>
+        <div class="description">- /portfolio visibility (public /private) | Change the visibility of your
+            portfolio.</div>
+        <div class="description">- /portfolio banner (image) | Change the banner of your portfolio.</div>
+        <div class="description">- /portfolio footer (text) | Change the footer of your portfolio. (The
+            small text at the bottom)</div>
+        <div class="description">- /portfolio description (text) | Change the description of your portfolio.
+            (The text below your name)</div>
+        <div class="description" id="subtitle">Other Utilities</div>
+        <div class="description">- /server | Get information's about your server.</div>
+        <div class="description">- /profile <user> | Get information's about a user.</div>
+        <div class="description">- /google <keywords> | Generate a google url using keywords.</div>
+        <div class="buttons-container">
+            <a href="https://discord.com/oauth2/authorize?client_id=850494888155938826&permissions=1644971818199&scope=applications.commands%20bot"
+                target="_blank" class="bottom-btn">Invite me!</a>
+            <a href="https://top.gg/bot/850494888155938826" target="_blank" class="bottom-btn">View on top.gg</a>
+        </div>
+
+    </body>
+
+</html>
